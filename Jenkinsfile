@@ -39,7 +39,7 @@ pipeline {
             steps {
                 echo 'Test Application'
                 bat"""
-                    "C:\\Users\\choyo\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" "C:\\Assignment Python\\rest_api\\DEMO\\CICD\\test.py"
+                    "python test.py"
                 """
             }
         }
@@ -47,7 +47,7 @@ pipeline {
             steps {
                 echo 'Deploy Application'
                 bat"""
-                    copy "C:\\Assignment Python\\rest_api\\DEMO\\CICD\\test.py" "C:\\Assignment Python\\rest_api\\DEMO\\TEMP_SERVER\\"
+                    xcopy firstPipeline "C:\\Assignment Python\\rest_api\\DEMO\\TEMP_SERVER\\"
                 """
             }
         }

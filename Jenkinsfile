@@ -39,7 +39,7 @@ pipeline {
             steps {
                 echo 'Test Application'
                 bat"""
-                    "python test.py"
+                    python test.py
                 """
             }
         }

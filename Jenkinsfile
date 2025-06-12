@@ -39,7 +39,7 @@ pipeline {
             steps {
                 echo 'Test Application'
                 bat"""
-                    python test.py
+                    "C:\\Users\\choyo\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" test.py
                 """
             }
         }

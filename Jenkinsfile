@@ -47,7 +47,7 @@ pipeline {
             steps {
                 echo 'Deploy Application'
                 bat"""
-                    cmd /c xcopy . "C:\\Assignment Python\\rest_api\\DEMO\\TEMP_SERVER /E /Y /I"
+                    cmd /c C:\\Windows\\System32\\xcopy.exe . "C:\\Assignment Python\\rest_api\\DEMO\\TEMP_SERVER /E /Y /I"
                 """
             }
         }
